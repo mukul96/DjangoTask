@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from rest_framework import viewsets
 from .models import *
 from django.shortcuts import get_object_or_404
@@ -39,7 +38,6 @@ class UserViewSet(CustomPageNumberPagination,viewsets.ModelViewSet):
         order=request.GET.get('sort', None)
         if order is not None:
             userObjects = userObjects.order_by(order)
-        #userObjects=userObjects.order_by('first_name')
         serializedData = UserSerializer(userObjects, many=True)
         data = self.paginate_queryset(serializedData.data, request)
 
