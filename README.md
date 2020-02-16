@@ -1,4 +1,4 @@
-#Project Setup
+## Project Setup
 - Install Python 3.7 first
 - Clone the Repository <br/>
     git clone https://github.com/mukul96/DjangoTask
