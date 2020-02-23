@@ -1,9 +1,9 @@
-#Project Setup
+## Project Setup
 - Install Python 3.7 first
 - Clone the Repository <br/>
     git clone https://github.com/mukul96/DjangoTask
 - go in the project directory <br/>
-    cd Django-task/djangoTask
+    cd DjangoTask
 -  setup a virtual environment<br/> 
        virtualenv my-environment
 - Activate the virtual environment<br/>
