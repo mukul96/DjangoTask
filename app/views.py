@@ -7,7 +7,10 @@ from rest_framework import status
 from django.http import Http404
 from django.db.models import  Q
 from rest_framework.pagination import PageNumberPagination
-
+from rest_framework import permissions
+from rest_framework_jwt.authentication import JSONWebTokenAuthentication
+from django.contrib.auth.mixins import UserPassesTestMixin
+from django.contrib.auth.models import _user_has_perm
 
 class CustomPageNumberPagination(PageNumberPagination):
     page_size_query_param = 'limit'
